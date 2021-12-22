@@ -44,7 +44,6 @@ userInput = userInput.strip()
 userInput = int(userInput)
 participants = [None] * userInput
 print("list size = " + str(len(participants)))       
-
 while exitCheck == False:
     print("\nMain Menu\n---------")
     print("1. Sign Up")
@@ -61,7 +60,6 @@ while exitCheck == False:
         print("\nParticipants:\n----------")
         viewParticipants(participants)
     elif userInput == "4":
-        "\n".join(participants)
         Header = ["Name"]
         with open('participants.csv', 'w', newline = '') as f:
             write = csv.writer(f)
